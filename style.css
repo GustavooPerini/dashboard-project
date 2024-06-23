@@ -32,7 +32,6 @@ body{
 
 .article{
     background-color: hsla(0, 0%, 50%, 0.25);
-
 }
 
 .dashboard{
@@ -43,7 +42,7 @@ body{
     font-size: 1.4rem;
 }
 
-ul{
+.sidebar-list{
     list-style: none;
     padding-left: 16px;
     display: flex;
@@ -73,4 +72,82 @@ a{
 
 a:visited{
     color: white;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1.5fr;
+    padding: 16px 16px 16px 24px;
+}
+
+.search-bar{
+    display: grid;
+    grid-template-columns: 1fr 18fr;
+    
+    align-items: top;
+    padding: 16px;
+}
+
+#search{
+    background-color: hsla(0, 0%, 50%, 0.25);
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+}
+
+#search:focus{
+    outline: 2px solid hsla(0, 0%, 0%, 0.45);
+}
+
+.side-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-weight: bold;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile-message{
+    font-weight: bold;
+}
+
+.greeting{
+    font-size: .8rem;
+    margin: 0;
+}
+
+.profile-name{
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 4px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button{
+    background-color: hsl(204, 68%, 50%);
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 6px 20px;
+    font-weight: 550;
+    cursor: pointer;
 }
